@@ -13,45 +13,102 @@
       line-height: 1.7;
     }
     .wrap {
-      max-width: 800px;
+      max-width: 900px;
       margin: 0 auto;
-      padding: 48px 20px;
+      padding: 48px 20px 64px;
     }
     h1 {
-      font-size: 32px;
-      margin-bottom: 8px;
+      font-size: 36px;
+      margin: 0 0 10px;
     }
     p {
       color: #cfcfcf;
+      margin: 0;
     }
-    .box {
-      margin-top: 32px;
+    .lead {
+      margin-top: 6px;
+      margin-bottom: 28px;
+      color: #b8b8b8;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 16px;
+      margin-top: 24px;
+    }
+    .card {
+      display: block;
       padding: 20px;
       border: 1px solid #333;
-      border-radius: 12px;
+      border-radius: 14px;
       background: #151515;
-    }
-    a {
-      color: #9ecbff;
+      color: #f5f5f5;
       text-decoration: none;
+      transition: transform 0.15s ease;
     }
-    ul {
-      padding-left: 20px;
+    .card:hover {
+      transform: translateY(-2px);
+    }
+    .card h2 {
+      margin: 0 0 8px;
+      font-size: 20px;
+      color: #9ecbff;
+    }
+    .card p {
+      color: #c7c7c7;
+      font-size: 14px;
+    }
+    .tag {
+      display: inline-block;
+      margin-top: 12px;
+      padding: 4px 10px;
+      border-radius: 999px;
+      background: #222;
+      color: #bdbdbd;
+      font-size: 12px;
+    }
+    .note {
+      margin-top: 28px;
+      padding: 18px 20px;
+      border: 1px solid #333;
+      border-radius: 14px;
+      background: #111;
+      color: #bdbdbd;
+      font-size: 14px;
+    }
+    .muted {
+      opacity: 0.75;
     }
   </style>
 </head>
 <body>
   <div class="wrap">
     <h1>黄昏インデックス</h1>
-    <p>気になった情報を静かに整理しています。</p>
+    <p class="lead">気になった情報を静かに整理しています。</p>
 
-    <div class="box">
-      <h2>準備中のページ</h2>
-      <ul>
-        <li><a href="new.html">新作・セール・無料登録の入口</a></li>
-<li><a href="sale.html">セールまとめ</a></li>
-<li><a href="circle.html">サークル別まとめ</a></li>
-      </ul>
+    <div class="grid">
+      <a class="card" href="new.html">
+        <h2>新着を見る</h2>
+        <p>新しく追加された作品をまとめて確認できます。</p>
+        <span class="tag">更新中</span>
+      </a>
+
+      <a class="card" href="sale.html">
+        <h2>セールを見る</h2>
+        <p>値引きやセール系の候補をまとめて確認できます。</p>
+        <span class="tag">更新中</span>
+      </a>
+
+      <a class="card muted" href="circle.html">
+        <h2>サークル別まとめ</h2>
+        <p>サークル単位で整理するページ。今は準備中です。</p>
+        <span class="tag">準備中</span>
+      </a>
+    </div>
+
+    <div class="note">
+      まずは新着とセールを中心に更新しています。<br>
+      準備ができたら、サークル別まとめも追加していきます。
     </div>
   </div>
 </body>
