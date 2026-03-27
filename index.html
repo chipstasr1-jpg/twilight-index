@@ -12,30 +12,37 @@
       color: #f5f5f5;
       line-height: 1.7;
     }
+
     .wrap {
-      max-width: 900px;
+      max-width: 960px;
       margin: 0 auto;
       padding: 48px 20px 64px;
     }
+
     h1 {
+      margin: 0 0 8px;
       font-size: 36px;
-      margin: 0 0 10px;
+      font-weight: 700;
+      letter-spacing: 0.02em;
     }
-    p {
-      color: #cfcfcf;
-      margin: 0;
-    }
+
     .lead {
-      margin-top: 6px;
-      margin-bottom: 28px;
-      color: #b8b8b8;
+      margin: 0;
+      color: #c7c7c7;
+      font-size: 15px;
     }
+
+    .section {
+      margin-top: 32px;
+    }
+
     .grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
       gap: 16px;
-      margin-top: 24px;
+      margin-top: 18px;
     }
+
     .card {
       display: block;
       padding: 20px;
@@ -44,40 +51,50 @@
       background: #151515;
       color: #f5f5f5;
       text-decoration: none;
-      transition: transform 0.15s ease;
+      transition: transform 0.15s ease, border-color 0.15s ease;
     }
+
     .card:hover {
       transform: translateY(-2px);
+      border-color: #4a4a4a;
     }
+
     .card h2 {
       margin: 0 0 8px;
       font-size: 20px;
       color: #9ecbff;
     }
+
     .card p {
-      color: #c7c7c7;
+      margin: 0;
+      color: #c9c9c9;
       font-size: 14px;
     }
+
     .tag {
       display: inline-block;
-      margin-top: 12px;
+      margin-top: 14px;
       padding: 4px 10px;
       border-radius: 999px;
       background: #222;
-      color: #bdbdbd;
+      color: #b8b8b8;
       font-size: 12px;
     }
+
     .note {
       margin-top: 28px;
       padding: 18px 20px;
       border: 1px solid #333;
       border-radius: 14px;
       background: #111;
-      color: #bdbdbd;
+      color: #b8b8b8;
       font-size: 14px;
     }
-    .muted {
-      opacity: 0.75;
+
+    .footer {
+      margin-top: 36px;
+      color: #8f8f8f;
+      font-size: 13px;
     }
   </style>
 </head>
@@ -86,29 +103,35 @@
     <h1>黄昏インデックス</h1>
     <p class="lead">気になった情報を静かに整理しています。</p>
 
-    <div class="grid">
-      <a class="card" href="new.html">
-        <h2>新着を見る</h2>
-        <p>新しく追加された作品をまとめて確認できます。</p>
-        <span class="tag">更新中</span>
-      </a>
+    <div class="section">
+      <div class="grid">
+        <a class="card" href="new.html">
+          <h2>新着を見る</h2>
+          <p>新しく追加された作品をまとめて確認できます。まず最初に見る入口です。</p>
+          <span class="tag">更新中</span>
+        </a>
 
-      <a class="card" href="sale.html">
-        <h2>セールを見る</h2>
-        <p>値引きやセール系の候補をまとめて確認できます。</p>
-        <span class="tag">更新中</span>
-      </a>
+        <a class="card" href="sale.html">
+          <h2>セールを見る</h2>
+          <p>値引きやセール系の候補をまとめて確認できます。安く見たいときの入口です。</p>
+          <span class="tag">更新中</span>
+        </a>
 
-      <a class="card muted" href="circle.html">
-        <h2>サークル別まとめ</h2>
-        <p>サークル単位で整理するページ。今は準備中です。</p>
-        <span class="tag">準備中</span>
-      </a>
+        <a class="card" href="circle.html">
+          <h2>サークル別まとめ</h2>
+          <p>サークル・ブランド単位で作品を見たいときの入口です。まとめて追いたい方向けです。</p>
+          <span class="tag">更新中</span>
+        </a>
+      </div>
     </div>
 
     <div class="note">
-      まずは新着とセールを中心に更新しています。<br>
-      準備ができたら、サークル別まとめも追加していきます。
+      まずは「新着」と「セール」を中心に更新しています。<br>
+      気になる作品を探しやすくするために、サークル別まとめも少しずつ整理しています。
+    </div>
+
+    <div class="footer">
+      更新は手動確認を挟みながら行っています。
     </div>
   </div>
 </body>
