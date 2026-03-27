@@ -12,48 +12,83 @@
       color: #f5f5f5;
       line-height: 1.7;
     }
+
     .wrap {
-      max-width: 860px;
+      max-width: 960px;
       margin: 0 auto;
-      padding: 48px 20px;
+      padding: 48px 20px 64px;
     }
+
     a {
       color: #9ecbff;
       text-decoration: none;
     }
-    .box {
-      margin-top: 24px;
-      padding: 20px;
-      border: 1px solid #333;
-      border-radius: 12px;
-      background: #151515;
+
+    .back {
+      margin-bottom: 18px;
+      display: inline-block;
+      color: #b8d8ff;
     }
-    .group {
-      padding: 20px 0;
-      border-bottom: 1px solid #2a2a2a;
+
+    h1 {
+      margin: 0 0 10px;
+      font-size: 34px;
     }
-    .group:last-child {
-      border-bottom: none;
-    }
-    .group h2 {
-      margin: 0 0 6px;
-      font-size: 22px;
-      color: #f5f5f5;
-    }
-    .count {
-      color: #bcbcbc;
+
+    .lead {
+      margin: 0 0 28px;
+      color: #c2c2c2;
       font-size: 14px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 16px;
+    }
+
+    .group-card {
+      background: #151515;
+      border: 1px solid #333;
+      border-radius: 14px;
+      padding: 18px;
+    }
+
+    .group-head {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
       margin-bottom: 12px;
     }
+
+    .group-head h2 {
+      margin: 0;
+      font-size: 20px;
+      color: #f5f5f5;
+    }
+
+    .count {
+      display: inline-block;
+      padding: 4px 10px;
+      border-radius: 999px;
+      background: #222;
+      color: #bdbdbd;
+      font-size: 12px;
+      white-space: nowrap;
+    }
+
     .work-list {
       margin: 0;
       padding-left: 18px;
     }
+
     .work-list li {
-      margin-bottom: 10px;
+      margin-bottom: 12px;
     }
+
     .meta-small {
-      color: #9f9f9f;
+      color: #a4a4a4;
       font-size: 13px;
       margin-top: 2px;
     }
@@ -61,152 +96,51 @@
 </head>
 <body>
   <div class="wrap">
-    <p><a href="index.html">← トップに戻る</a></p>
+    <a class="back" href="index.html">← トップに戻る</a>
     <h1>サークル別まとめ</h1>
+    <p class="lead">新着データをもとに、サークル・ブランド単位で見やすく整理しています。</p>
 
-    <div class="box">
+    <div class="grid">
       
-      <div class="group">
-        <h2>株式会社渋谷六花舎</h2>
-        <div class="count">2件</div>
+      <section class="group-card">
+        <div class="group-head">
+          <h2>パチカ</h2>
+          <span class="count">4件</span>
+        </div>
         <ul class="work-list">
           
           <li>
-            <a href="https://al.fanza.co.jp/?lurl=https%3A%2F%2Fbook.dmm.co.jp%2Fproduct%2F6258372%2Fs246asnph03882%2F&amp;af_id=mm0721-990&amp;ch=api" target="_blank" rel="noopener noreferrer">外国人の超絶倫XLち●ぽでわからせられるメスの本能「規格外な体格差でイキつぶされちゃう…っ」</a>
-            <div class="meta-small">2026-04-04 / 396円</div>
+            <a href="https://al.fanza.co.jp/?lurl=https%3A%2F%2Fbook.dmm.co.jp%2Fproduct%2F6258210%2Fs273asnph01300%2F&amp;af_id=mm0721-990&amp;ch=api" target="_blank" rel="noopener noreferrer">私の進路は風俗嬢〜卒業後すぐ、男たちの玩具になりました。〜【単行本版】</a>
+            <div class="meta-small">2026-03-27 / 1320円</div>
           </li>
         
 
           <li>
-            <a href="https://al.fanza.co.jp/?lurl=https%3A%2F%2Fbook.dmm.co.jp%2Fproduct%2F4207940%2Fs246asnph03881%2F&amp;af_id=mm0721-990&amp;ch=api" target="_blank" rel="noopener noreferrer">強気な元ヤンでもエッチはよわよわ！？〜「き、気持ちよくなんかねー…ぞっ」〜（2）</a>
-            <div class="meta-small">2026-04-04 / 396円</div>
+            <a href="https://al.fanza.co.jp/?lurl=https%3A%2F%2Fbook.dmm.co.jp%2Fproduct%2F6258209%2Fs273asnph01299%2F&amp;af_id=mm0721-990&amp;ch=api" target="_blank" rel="noopener noreferrer">私の進路は風俗嬢〜卒業後すぐ、男たちの玩具になりました。〜【FANZA限定特典付き】</a>
+            <div class="meta-small">2026-03-27 / 1870円</div>
+          </li>
+        
+
+          <li>
+            <a href="https://al.fanza.co.jp/?lurl=https%3A%2F%2Fbook.dmm.co.jp%2Fproduct%2F6258207%2Fs273asnph01297%2F&amp;af_id=mm0721-990&amp;ch=api" target="_blank" rel="noopener noreferrer">悪いことほどキモチいい。〜女刑事、市民の前でイキ狂う【単行本版】</a>
+            <div class="meta-small">2026-03-27 / 1320円</div>
+          </li>
+        
+
+          <li>
+            <a href="https://al.fanza.co.jp/?lurl=https%3A%2F%2Fbook.dmm.co.jp%2Fproduct%2F6258206%2Fs273asnph01296%2F&amp;af_id=mm0721-990&amp;ch=api" target="_blank" rel="noopener noreferrer">悪いことほどキモチいい。〜女刑事、市民の前でイキ狂う【FANZA限定特典付き】</a>
+            <div class="meta-small">2026-03-27 / 1870円</div>
           </li>
         
         </ul>
-      </div>
+      </section>
     
 
-      <div class="group">
-        <h2>文苑堂</h2>
-        <div class="count">1件</div>
-        <ul class="work-list">
-          
-          <li>
-            <a href="https://al.fanza.co.jp/?lurl=https%3A%2F%2Fbook.dmm.co.jp%2Fproduct%2F767557%2Fb472abnen03985%2F&amp;af_id=mm0721-990&amp;ch=api" target="_blank" rel="noopener noreferrer">COMIC BAVEL SPECIAL COLLECTION（コミックバベル スペシャルコレクション）VOL80</a>
-            <div class="meta-small">2026-04-01 / 440円</div>
-          </li>
-        
-        </ul>
-      </div>
-    
-
-      <div class="group">
-        <h2>クロエ出版</h2>
-        <div class="count">1件</div>
-        <ul class="work-list">
-          
-          <li>
-            <a href="https://al.fanza.co.jp/?lurl=https%3A%2F%2Fbook.dmm.co.jp%2Fproduct%2F13029%2Fb079akroe01749%2F&amp;af_id=mm0721-990&amp;ch=api" target="_blank" rel="noopener noreferrer">COMIC真激2026年5月号</a>
-            <div class="meta-small">2026-04-01 / 1210円</div>
-          </li>
-        
-        </ul>
-      </div>
-    
-
-      <div class="group">
-        <h2>エンジェル出版</h2>
-        <div class="count">1件</div>
-        <ul class="work-list">
-          
-          <li>
-            <a href="https://al.fanza.co.jp/?lurl=https%3A%2F%2Fbook.dmm.co.jp%2Fproduct%2F4005359%2Fb061bangl03102%2F&amp;af_id=mm0721-990&amp;ch=api" target="_blank" rel="noopener noreferrer">神乳SEVEN vol.69</a>
-            <div class="meta-small">2026-04-01 / 550円</div>
-          </li>
-        
-        </ul>
-      </div>
-    
-
-      <div class="group">
-        <h2>コアマガジン（雑誌）</h2>
-        <div class="count">1件</div>
-        <ul class="work-list">
-          
-          <li>
-            <a href="https://al.fanza.co.jp/?lurl=https%3A%2F%2Fbook.dmm.co.jp%2Fproduct%2F692347%2Fs011akamj02825%2F&amp;af_id=mm0721-990&amp;ch=api" target="_blank" rel="noopener noreferrer">コミックホットミルク 濃いめ Vol.057</a>
-            <div class="meta-small">2026-03-30 / 660円</div>
-          </li>
-        
-        </ul>
-      </div>
-    
-
-      <div class="group">
-        <h2>ぶんか社</h2>
-        <div class="count">1件</div>
-        <ul class="work-list">
-          
-          <li>
-            <a href="https://al.fanza.co.jp/?lurl=https%3A%2F%2Fbook.dmm.co.jp%2Fproduct%2F4179881%2Fb129dbnka20129%2F&amp;af_id=mm0721-990&amp;ch=api" target="_blank" rel="noopener noreferrer">サイベリアplus Vol.47</a>
-            <div class="meta-small">2026-03-30 / 1100円</div>
-          </li>
-        
-        </ul>
-      </div>
-    
-
-      <div class="group">
-        <h2>双葉社</h2>
-        <div class="count">1件</div>
-        <ul class="work-list">
-          
-          <li>
-            <a href="https://al.fanza.co.jp/?lurl=https%3A%2F%2Fbook.dmm.co.jp%2Fproduct%2F11082%2Fb350eftdb40424%2F&amp;af_id=mm0721-990&amp;ch=api" target="_blank" rel="noopener noreferrer">アクションピザッツ2026年5月号</a>
-            <div class="meta-small">2026-03-28 / 660円</div>
-          </li>
-        
-        </ul>
-      </div>
-    
-
-      <div class="group">
-        <h2>一水社</h2>
-        <div class="count">1件</div>
-        <ul class="work-list">
-          
-          <li>
-            <a href="https://al.fanza.co.jp/?lurl=https%3A%2F%2Fbook.dmm.co.jp%2Fproduct%2F860108%2Fb164aisis05998%2F&amp;af_id=mm0721-990&amp;ch=api" target="_blank" rel="noopener noreferrer">COMICオルガ vol.84</a>
-            <div class="meta-small">2026-03-28 / 770円</div>
-          </li>
-        
-        </ul>
-      </div>
-    
-
-      <div class="group">
-        <h2>ナンバーナイン</h2>
-        <div class="count">2件</div>
-        <ul class="work-list">
-          
-          <li>
-            <a href="https://al.fanza.co.jp/?lurl=https%3A%2F%2Fbook.dmm.co.jp%2Fproduct%2F6259180%2Fk804annbn26839%2F&amp;af_id=mm0721-990&amp;ch=api" target="_blank" rel="noopener noreferrer">遮断賢者</a>
-            <div class="meta-small">2026-03-27 / 550円</div>
-          </li>
-        
-
-          <li>
-            <a href="https://al.fanza.co.jp/?lurl=https%3A%2F%2Fbook.dmm.co.jp%2Fproduct%2F6259178%2Fk804annbn26836%2F&amp;af_id=mm0721-990&amp;ch=api" target="_blank" rel="noopener noreferrer">この世の果てのシラセ</a>
-            <div class="meta-small">2026-03-27 / 550円</div>
-          </li>
-        
-        </ul>
-      </div>
-    
-
-      <div class="group">
-        <h2>サークルコネクト</h2>
-        <div class="count">3件</div>
+      <section class="group-card">
+        <div class="group-head">
+          <h2>サークルコネクト</h2>
+          <span class="count">3件</span>
+        </div>
         <ul class="work-list">
           
           <li>
@@ -227,7 +161,179 @@
           </li>
         
         </ul>
-      </div>
+      </section>
+    
+
+      <section class="group-card">
+        <div class="group-head">
+          <h2>株式会社渋谷六花舎</h2>
+          <span class="count">2件</span>
+        </div>
+        <ul class="work-list">
+          
+          <li>
+            <a href="https://al.fanza.co.jp/?lurl=https%3A%2F%2Fbook.dmm.co.jp%2Fproduct%2F6258372%2Fs246asnph03882%2F&amp;af_id=mm0721-990&amp;ch=api" target="_blank" rel="noopener noreferrer">外国人の超絶倫XLち●ぽでわからせられるメスの本能「規格外な体格差でイキつぶされちゃう…っ」</a>
+            <div class="meta-small">2026-04-04 / 396円</div>
+          </li>
+        
+
+          <li>
+            <a href="https://al.fanza.co.jp/?lurl=https%3A%2F%2Fbook.dmm.co.jp%2Fproduct%2F4207940%2Fs246asnph03881%2F&amp;af_id=mm0721-990&amp;ch=api" target="_blank" rel="noopener noreferrer">強気な元ヤンでもエッチはよわよわ！？〜「き、気持ちよくなんかねー…ぞっ」〜（2）</a>
+            <div class="meta-small">2026-04-04 / 396円</div>
+          </li>
+        
+        </ul>
+      </section>
+    
+
+      <section class="group-card">
+        <div class="group-head">
+          <h2>ナンバーナイン</h2>
+          <span class="count">2件</span>
+        </div>
+        <ul class="work-list">
+          
+          <li>
+            <a href="https://al.fanza.co.jp/?lurl=https%3A%2F%2Fbook.dmm.co.jp%2Fproduct%2F6259180%2Fk804annbn26839%2F&amp;af_id=mm0721-990&amp;ch=api" target="_blank" rel="noopener noreferrer">遮断賢者</a>
+            <div class="meta-small">2026-03-27 / 550円</div>
+          </li>
+        
+
+          <li>
+            <a href="https://al.fanza.co.jp/?lurl=https%3A%2F%2Fbook.dmm.co.jp%2Fproduct%2F6259178%2Fk804annbn26836%2F&amp;af_id=mm0721-990&amp;ch=api" target="_blank" rel="noopener noreferrer">この世の果てのシラセ</a>
+            <div class="meta-small">2026-03-27 / 550円</div>
+          </li>
+        
+        </ul>
+      </section>
+    
+
+      <section class="group-card">
+        <div class="group-head">
+          <h2>文苑堂</h2>
+          <span class="count">1件</span>
+        </div>
+        <ul class="work-list">
+          
+          <li>
+            <a href="https://al.fanza.co.jp/?lurl=https%3A%2F%2Fbook.dmm.co.jp%2Fproduct%2F767557%2Fb472abnen03985%2F&amp;af_id=mm0721-990&amp;ch=api" target="_blank" rel="noopener noreferrer">COMIC BAVEL SPECIAL COLLECTION（コミックバベル スペシャルコレクション）VOL80</a>
+            <div class="meta-small">2026-04-01 / 440円</div>
+          </li>
+        
+        </ul>
+      </section>
+    
+
+      <section class="group-card">
+        <div class="group-head">
+          <h2>クロエ出版</h2>
+          <span class="count">1件</span>
+        </div>
+        <ul class="work-list">
+          
+          <li>
+            <a href="https://al.fanza.co.jp/?lurl=https%3A%2F%2Fbook.dmm.co.jp%2Fproduct%2F13029%2Fb079akroe01749%2F&amp;af_id=mm0721-990&amp;ch=api" target="_blank" rel="noopener noreferrer">COMIC真激2026年5月号</a>
+            <div class="meta-small">2026-04-01 / 1210円</div>
+          </li>
+        
+        </ul>
+      </section>
+    
+
+      <section class="group-card">
+        <div class="group-head">
+          <h2>エンジェル出版</h2>
+          <span class="count">1件</span>
+        </div>
+        <ul class="work-list">
+          
+          <li>
+            <a href="https://al.fanza.co.jp/?lurl=https%3A%2F%2Fbook.dmm.co.jp%2Fproduct%2F4005359%2Fb061bangl03102%2F&amp;af_id=mm0721-990&amp;ch=api" target="_blank" rel="noopener noreferrer">神乳SEVEN vol.69</a>
+            <div class="meta-small">2026-04-01 / 550円</div>
+          </li>
+        
+        </ul>
+      </section>
+    
+
+      <section class="group-card">
+        <div class="group-head">
+          <h2>コアマガジン（雑誌）</h2>
+          <span class="count">1件</span>
+        </div>
+        <ul class="work-list">
+          
+          <li>
+            <a href="https://al.fanza.co.jp/?lurl=https%3A%2F%2Fbook.dmm.co.jp%2Fproduct%2F692347%2Fs011akamj02825%2F&amp;af_id=mm0721-990&amp;ch=api" target="_blank" rel="noopener noreferrer">コミックホットミルク 濃いめ Vol.057</a>
+            <div class="meta-small">2026-03-30 / 660円</div>
+          </li>
+        
+        </ul>
+      </section>
+    
+
+      <section class="group-card">
+        <div class="group-head">
+          <h2>ぶんか社</h2>
+          <span class="count">1件</span>
+        </div>
+        <ul class="work-list">
+          
+          <li>
+            <a href="https://al.fanza.co.jp/?lurl=https%3A%2F%2Fbook.dmm.co.jp%2Fproduct%2F4179881%2Fb129dbnka20129%2F&amp;af_id=mm0721-990&amp;ch=api" target="_blank" rel="noopener noreferrer">サイベリアplus Vol.47</a>
+            <div class="meta-small">2026-03-30 / 1100円</div>
+          </li>
+        
+        </ul>
+      </section>
+    
+
+      <section class="group-card">
+        <div class="group-head">
+          <h2>双葉社</h2>
+          <span class="count">1件</span>
+        </div>
+        <ul class="work-list">
+          
+          <li>
+            <a href="https://al.fanza.co.jp/?lurl=https%3A%2F%2Fbook.dmm.co.jp%2Fproduct%2F11082%2Fb350eftdb40424%2F&amp;af_id=mm0721-990&amp;ch=api" target="_blank" rel="noopener noreferrer">アクションピザッツ2026年5月号</a>
+            <div class="meta-small">2026-03-28 / 660円</div>
+          </li>
+        
+        </ul>
+      </section>
+    
+
+      <section class="group-card">
+        <div class="group-head">
+          <h2>一水社</h2>
+          <span class="count">1件</span>
+        </div>
+        <ul class="work-list">
+          
+          <li>
+            <a href="https://al.fanza.co.jp/?lurl=https%3A%2F%2Fbook.dmm.co.jp%2Fproduct%2F860108%2Fb164aisis05998%2F&amp;af_id=mm0721-990&amp;ch=api" target="_blank" rel="noopener noreferrer">COMICオルガ vol.84</a>
+            <div class="meta-small">2026-03-28 / 770円</div>
+          </li>
+        
+        </ul>
+      </section>
+    
+
+      <section class="group-card">
+        <div class="group-head">
+          <h2>グループ・ゼロ</h2>
+          <span class="count">1件</span>
+        </div>
+        <ul class="work-list">
+          
+          <li>
+            <a href="https://al.fanza.co.jp/?lurl=https%3A%2F%2Fbook.dmm.co.jp%2Fproduct%2F6258217%2Fb750egrzr07949%2F&amp;af_id=mm0721-990&amp;ch=api" target="_blank" rel="noopener noreferrer">性奴会長【新装版】</a>
+            <div class="meta-small">2026-03-27 / 550円</div>
+          </li>
+        
+        </ul>
+      </section>
     
     </div>
   </div>
